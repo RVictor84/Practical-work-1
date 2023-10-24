@@ -373,7 +373,6 @@ graph LR;
   untracked -- "команда: git add <имя_файла>" --> staged
   staged -- "команда: git commit -m "комментарий"" --> tracked
   tracked -- "файл изменен" --> modified
-  modified -- "git add или git add + git commit -m" --> tracked
 ~~~
 
 
