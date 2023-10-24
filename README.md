@@ -370,7 +370,10 @@ stage — «сцена», «этап [процесса]» и area — «обла
 
 ~~~mermaid
 graph LR;
-  untracked -- "Новый файл добавленный в репозиторий" --> staged
+  untracked -- "команда: git add <имя_файла>" --> staged
+  staged -- "команда: git commit -m "комментарий"" --> tracked
+  tracked -- "файл изменен" --> modified
+  modified -- "git add или git add + git commit -m" --> tracked
 ~~~
 
 
